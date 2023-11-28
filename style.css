@@ -1,0 +1,81 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("C:\\Users\\prava\\Desktop\\lab4\\bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #293241;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(255, 192, 203, 0.56);
+    color: black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 30px;
+    flex: 1;
+}
+
+button, input {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+button {
+    background-color: #ff6f61;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #e4e4e467;
+}
+
+th, td {
+    border: 1px solid #e4e4e43a;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #1a1a1a3f;
+    color: #ffffff;
+}
+
+footer {
+    background-color: rgba(255, 192, 203, 0.458);
+    color: rgb(8, 8, 8);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+}
+/* Media query for screens 400px and below */
+@media (max-width: 400px) {
+    button, input {
+        margin: 0;
+    }
+}

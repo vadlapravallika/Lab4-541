@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Sunset Dashboard</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Sunrise and Sunset Timmings</h1>
+    </header>
+    <main>
+    <section id="search-section">
+            <button id="current-location">Use Current Location</button>
+            <input type="text" id="location-search" placeholder="Enter a location">
+            <button id="search-button">Search</button>
+        </section>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Section</th>
+                    <th>Today Timing</th>
+                    <th>Tomorrow Timing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sunrise and Sunset</td>
+                    <td class="box"><b>
+                        <p id="sunrise-today"></p>
+                        <p id="sunset-today"></p>
+                    </td>
+                    <td class="box"><b>
+                        <p id="sunrise-tomorrow"></p>
+                        <p id="sunset-tomorrow"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dawn and Dusk</td>
+                    <td class="box"><b>
+                        <p id="dawn-today"></p>
+                        <p id="dusk-today"></p>
+                    </td>
+                    <td class="box"><b>
+                        <p id="dawn-tomorrow"></p>
+                        <p id="dusk-tomorrow"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Day Length</td>
+                    <td class="box"><b>
+                        <p id="day-length-today"></p>
+                        </td>
+                        <td class="box"><b>
+                        <p id="day-length-tomorrow"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Solar Noon</td>
+                    <td class="box"><b>
+                        <p id="solar-noon-today"></p>
+                    </td>
+                    <td class="box"><b>
+                        <p id="solar-noon-tomorrow"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Time Zone</td>
+                    <td colspan="2" class="box"><b>
+                        <p id="time-zone-info"></p>
+                    </td>
+              </tr></tr>
+            </tbody>
+        </table>
+        </main>
+    </main>
+    <footer>
+        <b>
+        <p>Credits: Data provided by Sunrise-Sunset API</p>
+        <p>Visit <a href="https://sunrisesunset.io/api/" target="_blank">Website</a> for more information.</p></b>
+    </footer>
+    <script src="script.js"></script> <!-- Link to your external JS file -->
+</body>
+</html>
