@@ -60,9 +60,7 @@ function displayData(data, day) {
 }
 
 function displayError(message) {
-    const errorElement = document.getElementById('error-message');
-    errorElement.textContent = message;
-    errorElement.style.display = 'block';
+    alert(message);
 }
 
 function showError(error) {
